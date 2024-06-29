@@ -14,3 +14,9 @@ pip install -r requirements.txt
 ```
 
 Voilla!!! You are good to go!
+
+If you do not have python installed , then:
+
+For Ubuntu users : https://www.geeksforgeeks.org/how-to-install-python-in-ubuntu/
+
+For Windows users : https://www.digitalocean.com/community/tutorials/install-python-windows-10
