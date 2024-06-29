@@ -8,10 +8,7 @@ An autoencoder is a type of unsupervised neural network that learns to represent
 Project Structure:
 
 encoder.py: The core Python script containing the code for loading data, building the autoencoder model, training, and visualizing results.
-Optional: You can add additional files or directories, such as:
-requirements.txt: A text file listing the required Python libraries for running the code.
-data: A directory to store the downloaded Fashion MNIST dataset (if not using Keras' built-in loading).
-results: A directory to save the generated visualizations (optional).
+
 Running the Code:
 
 Prerequisites:
