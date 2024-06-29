@@ -1,0 +1,16 @@
+# How to install the requirements?
+
+Step 1:
+```
+Download the requirements.txt file
+```
+
+Step 2:
+```
+Open the terminal , change directory to the folder where requirements.txt is , then run:
+
+pip install -r requirements.txt
+  
+```
+
+Voilla!!! You are good to go!
