@@ -14,11 +14,7 @@ Running the Code:
 Prerequisites:
 Install Python and required libraries,
 ```
-(refer to requirements.txt)
-```
-Ensure you have Keras and TensorFlow installed 
-```
-pip install tensorflow keras
+Refer to requirements folder.
 ```
 Download Data (if not using built-in Keras loading):
 ```
