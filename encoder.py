@@ -29,3 +29,19 @@ decoded = Dense(256, activation='relu')(decoded)
 decoded = Dense(784, activation='sigmoid')(decoded)
 
 autoencoder = Model(input_img, decoded)
+
+# Compile the model
+autoencoder.compile(optimizer='adam', loss='binary_crossentropy')
+
+# Visualize the architecture of the autoencoder
+plot_model(autoencoder, to_file='autoencoder.png', show_shapes=True, show_layer_names=True)
+
+# Train the model
+autoencoder.fit(x_train, x_train,
+                epochs=50,
+                batch_size=256,
+                shuffle=True,
+                validation_data=(x_test, x_test))
+
+
+
