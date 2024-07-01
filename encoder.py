@@ -43,5 +43,29 @@ autoencoder.fit(x_train, x_train,
                 shuffle=True,
                 validation_data=(x_test, x_test))
 
+# Encode and decode some images
+encoded_imgs = autoencoder.predict(x_test)
+decoded_imgs = autoencoder.predict(x_test)
+
+# Display original and reconstructed images
+n = 10
+plt.figure(figsize=(20, 4))
+for i in range(n):
+    # Original images
+    ax = plt.subplot(2, n, i + 1)
+    plt.imshow(x_test[i].reshape(28, 28))
+    plt.gray()
+    ax.get_xaxis().set_visible(False)
+    ax.get_yaxis().set_visible(False)
+
+    # Reconstructed images
+    ax = plt.subplot(2, n, i + 1 + n)
+    plt.imshow(decoded_imgs[i].reshape(28, 28))
+    plt.gray()
+    ax.get_xaxis().set_visible(False)
+    ax.get_yaxis().set_visible(False)
+plt.show()
+
+
 
 
